@@ -10,6 +10,4 @@ tar xvfz node_exporter-*.*-amd64.tar.gz && mv node_exporter-*.*-amd64 node_expor
 
 (crontab -l 2>/dev/null; echo "@reboot cd node_exporter && ./node_exporter") | crontab -
 
-cd node_exporter && ./node_exporter
-
-
+cd node_exporter && ./node_exporter &
